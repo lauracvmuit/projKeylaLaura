@@ -2,11 +2,40 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/forms.css' />
+    
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Bienvenidos a la aplicación desarrollada por Laura y Keyla en la asignatura de SAT></p>
-    <link> rel="stylesheet" type="text/css" href="C:\Users\keyla\Documents\MUIT\SAT\appKeylaLaura\css" media="screen" </link>
+  <body style="background-color:blueviolet">
+    <h1 style="color: white;" align = "center"><%= title %></h1>
+    <h2 align = "center">Bienvenidos a la aplicación desarrollada por Laura y Keyla en la asignatura de SAT</h2>
+    <table align="center">
+      <tr>
+        <td></td>
+        <td>
+          <p>Pincha y accede a nuestro repositorio de Git</p>  
+        </td>        
+      </tr>
+      <tr>
+        <td>
+          <img  
+              width = "300" 
+              height = "100" 
+              src = "https://miro.medium.com/max/1400/1*CwnHbwvGLlanReR_PgHbvA.jpeg">
+          </img>
+        </td>
+        <td>
+          <img 
+            onclick = "location.href='https://github.com/lauracvmuit/projKeylaLaura'"
+            width = "300" 
+            height = "150"
+            src = "https://miro.medium.com/max/1200/1*pmCYFW7bPmEaysG2dl27IA.png" >           
+          </img>
+        </td>
+      </tr>
+    </table>
+    <p>Esta página web es un ejemplo de uso de Git y Heroku.</p>
+    <p>Accede a nuestra aplicación en Heroku pinchando el siguiente botón: 
+        <button onclick = "location.href='https://dashboard.heroku.com/apps/aplicacion-sat'"> Heroku app </button>
+    </p>
   </body>
 </html>
