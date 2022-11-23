@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
     const client = await pool.connect();
     const result = await client.query('SELECT * FROM tabla_mejoras');
     const results = { 'results': (result) ? result.rows : null};
-    res.render('mejoras', results );
+    res.render('mejorasbd', results );
     client.release();
   } catch (err) {
     console.error(err);
