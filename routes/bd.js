@@ -10,12 +10,12 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/bd', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const client = await pool.connect();
     const result = await client.query('SELECT * FROM test_table');
     const results = { 'results': (result) ? result.rows : null};
-    res.render('db', results );
+    res.render('bd', results );
     client.release();
   } catch (err) {
     console.error(err);
