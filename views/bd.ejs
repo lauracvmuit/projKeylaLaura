@@ -8,22 +8,20 @@
   <body style="background-color:blueviolet">
     <h1 style="color: white;" align = "center">Resultados base de datos</h1>
     <table class = "tableBaseDatos">
-      <tr>
-        <td> Id </td>
-        <td>
+      <td>
+        <th>Id</th>
+        <th>Nombre</th>
+      </td>
+      <td>
           <% results.forEach(function(r) { %>
-            <li><%= r.id %></li>
+            <tr><%= r.id %></tr>
           <%}); %>
-        </td>
-      </tr>
-      <tr>
-        <td> Nombre </td>
-        <td>
+      </td>
+      <td>
           <% results.forEach(function(r) { %>
-            <li><%= r.name %></li>
-          <%}); %>
-        </td>        
-      </tr>
+            <tr><%= r.name %></tr>
+          <%}); %>          
+      </td>
     </table>    
   </body>
 </html>
