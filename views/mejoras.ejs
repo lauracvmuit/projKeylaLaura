@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Base de datos</title>
+    <link rel='stylesheet' href='/stylesheets/forms.css' />
+    
+  </head>
+  <body style="background-color:blueviolet">
+    <h1 style="color: white;" align = "center">Resultados base de datos</h1>
+    <table class = "tableBaseDatosMejoras">
+      <tr>
+        <th>Postre</th>
+        <th>Ingredientes</th>
+        <th>Imagen</th>
+      </tr>      
+      <% results.forEach(function(r) { %>
+      <tr>
+        <td><%= r.postre %></td>
+        <td><%= r.ingredientes %></td>
+        <td><%= r.imagen %></td>
+      </tr>            
+      <%}); %>
+    </table>    
+  </body>
+</html>

@@ -7,17 +7,11 @@
   </head>
   <body style="background-color:blueviolet">
     <h1 style="color: white;" align = "center">Resultados base de datos</h1>
-    <table class = "tableBaseDatos">
-      <tr>
-        <th>Id</th>
-        <th>Nombre</th>
-      </tr>      
-      <% results.forEach(function(r) { %>
-      <tr>
-        <td><%= r.id %></td>
-        <td><%= r.name %></td>
-      </tr>            
+    
+    <ul>
+      <% results.forEach(function(r) { %>        
+          <li><%= r.id %> - <%= r.name %></li>         
       <%}); %>
-    </table>    
+    </ul>
   </body>
 </html>
