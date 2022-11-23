@@ -11,17 +11,13 @@
       <tr>
         <th>Id</th>
         <th>Nombre</th>
-      </tr>
+      </tr>      
+      <% results.forEach(function(r) { %>
       <tr>
-          <% results.forEach(function(r) { %>
-            <td><%= r.id %></td>
-          <%}); %>
-      </tr>
-      <tr>
-          <% results.forEach(function(r) { %>
-            <td><%= r.name %></td>
-          <%}); %>          
-      </tr>
+        <td><%= r.id %></td>
+        <td><%= r.name %></td>
+      </tr>            
+      <%}); %>
     </table>    
   </body>
 </html>
