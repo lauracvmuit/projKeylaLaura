@@ -9,15 +9,15 @@
     <h1 style="color: white;" align = "center">Resultados base de datos postres</h1>
     <table class = "tableBaseDatosMejoras">
       <tr>
-        <th>Postre</th>
-        <th>Ingredientes</th>
-        <th>Imagen</th>
+        <th>Referencia</th>
+        <th>Tipo</th>
+        <th>Tejido</th>
       </tr>      
       <% results.forEach(function(r) { %>
       <tr>
-        <td><%= r.postre %></td>
-        <td><%= r.ingredientes %></td>
-        <td><%= r.imagen %></td>
+        <td><%= r.referencia %></td>
+        <td><%= r.tipo %></td>
+        <td><%= r.tejido %></td>
       </tr>            
       <%}); %>
     </table>    
